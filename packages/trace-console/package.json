@@ -1,0 +1,21 @@
+{
+  "name": "trace-console",
+  "version": "0.1.0",
+  "description": "Prints trace messages to the console using lazy write.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jramos-br/node-minitrace"
+  },
+  "keywords": [
+    "trace"
+  ],
+  "author": "Jorge Ramos <jramos@pobox.com> (https://github.com/jramos-br)",
+  "license": "MIT"
+}

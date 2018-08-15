@@ -1,2 +1,2 @@
 # node-minitrace
-NodeJs package to print trace messages to the console using lazy write.
+Monorepo with NodeJs packages to print trace messages to the console using lazy write.

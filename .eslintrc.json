@@ -1,0 +1,39 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 5
+  },
+  "env": {
+    "es6": false,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:es5/no-es2015",
+    "plugin:es5/no-es2016"
+  ],
+  "rules": {
+    "no-console": 0,
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "windows"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ]
+  },
+  "plugins": [
+    "es5"
+  ]
+}
