@@ -1,5 +1,5 @@
 {
-  "name": "color-log",
+  "name": "@jramos-br/color-log",
   "version": "0.1.0",
   "description": "Prints to the console styled with colors.",
   "main": "index.js",

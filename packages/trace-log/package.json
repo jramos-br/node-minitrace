@@ -1,5 +1,5 @@
 {
-  "name": "trace-log",
+  "name": "@jramos-br/trace-log",
   "version": "0.1.0",
   "description": "Prints trace messages to the console using lazy write.",
   "main": "index.js",
