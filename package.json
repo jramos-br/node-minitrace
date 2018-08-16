@@ -7,7 +7,7 @@
     "packages": "packages"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index 0 && node index 1 && node index 2 && node index 3"
   },
   "repository": {
     "type": "git",
