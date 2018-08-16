@@ -1,12 +1,12 @@
 /**
  * @file Prints trace messages to the console using lazy write.
  * @copyright (C) 2018 Jorge Ramos {@link https://github.com/jramos-br}
- * @license MIT. This program is free software, licensed under the MIT License
- * as published by the Open Source Initiative. It is distributed in the hope
- * that it will be useful, but WITHOUT ANY WARRANTY; without even the implied
- * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * file LICENSE for more details. If you don't find it, please see the MIT
- * License template at {@link http://opensource.org/licenses/MIT}.
+ * @license MIT. This program is free software, licensed under the terms of the
+ * MIT License as published by the Open Source Initiative. It is distributed in
+ * the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the
+ * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the file LICENSE for more details. If you don't find it, please see the
+ * MIT License template at {@link http://opensource.org/licenses/MIT}.
  * @author Jorge Ramos <jramos@pobox.com>
  * @description This module creates an object to format and send trace messages using
  * `console.log()`. Messages do not print immediately. Instead, on each call, they are
@@ -149,7 +149,7 @@ exports.log = function() {
 };
 
 /**
- * Formats a message and enqueues the result for later printing.
+ * Formats a warning message and enqueues the result for later printing.
  * @param {any} args The message to be formatted and printed. Multiple arguments can
  * be passed, with the first used as the primary message and all additional used as
  * substitution values similar to `printf(3)`.
@@ -161,7 +161,7 @@ exports.warn = function() {
 };
 
 /**
- * Formats a message and enqueues the result for later printing.
+ * Formats an error message and enqueues the result for later printing.
  * @param {any} args The message to be formatted and printed. Multiple arguments can
  * be passed, with the first used as the primary message and all additional used as
  * substitution values similar to `printf(3)`.
@@ -195,6 +195,15 @@ exports.indent = function() {
   ctx.indentWidth = ++ctx.indentLevel * ctx.indentSize;
 };
 
+/**
+ * Formats an optional message, enqueues the result for later printing and increases the
+ * indentation of subsequent lines.
+ * @param {any} args An optional message to be formatted and printed. Multiple arguments
+ * can be passed, with the first used as the primary message and all additional used as
+ * substitution values similar to `printf(3)`.
+ * @description The arguments are all passed to `util.format()`. The formatted message
+ * is enqueued to be printed with `console.log()`.
+ */
 exports.group = exports.indent;
 
 /**
@@ -206,6 +215,9 @@ exports.unindent = function() {
   }
 };
 
+/**
+ * Decreases the indentation of subsequent lines.
+ */
 exports.groupEnd = exports.unindent;
 
 /**
